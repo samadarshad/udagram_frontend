@@ -1,0 +1,1 @@
+docker run -p 8100:80 udagram_frontend
