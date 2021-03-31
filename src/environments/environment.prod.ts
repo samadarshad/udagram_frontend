@@ -2,11 +2,14 @@
 // `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
+const domain = window.location.origin;
+
 export const environment = {
   production: true,
   appName: 'Udagram',
-  apiHost: 'http://localhost:8080/api/v0'
+  apiHost: `${domain}:8080/api/v0`
 };
+
 
 /*
  * For easier debugging in development mode, you can import the following file
